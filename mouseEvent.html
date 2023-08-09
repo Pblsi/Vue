@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veu_</title>
     <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
+    <style>
+        .box{
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background: rgba(128, 128, 128, 0.26);
+            margin: 200px;
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
     <h1> Hello, Vue </h1>
-    <div id="app">
+<div id="app">
         <div v-show="showBooks">
             <p>{{title}} - {{author}} - {{age}}</p>
         </div>
@@ -18,7 +28,12 @@
             <span v-else="showBooks">show Books</span>
         </button>
 
-        <div v-show="showBooks"> yoruba people are funny</div>
+        <br>
+        <!-- mouse event -->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
 </div>
     
     <script src="app.js"></script>
